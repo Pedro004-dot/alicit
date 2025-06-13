@@ -22,7 +22,7 @@ const BidsPage: React.FC<BidsPageProps> = ({ bids, loading }) => {
               Gerencie todas as licitações disponíveis na plataforma
             </p>
           </div>
-          <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">
+          <div className="bg-[#FFD2B3] text-[#FF7610] px-4 py-2 rounded-lg">
             <span className="font-semibold">{bids.length}</span> licitações
           </div>
         </div>

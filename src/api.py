@@ -91,7 +91,7 @@ def health_check():
     """Verificação de saúde da API"""
     return jsonify({'status': 'OK', 'message': 'API funcionando corretamente'})
 
-@app.route('/api/bids', methods=['GET'])
+@app.route('/api/bids', methods=['GET'],strict_slashes=False)
 def get_bids():
     """Buscar todas as licitações do banco de dados"""
     try:

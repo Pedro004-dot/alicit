@@ -38,8 +38,8 @@ const MatchCard: React.FC<MatchCardProps> = ({ match, onBidClick }) => {
       </CardHeader>
       <CardContent className="space-y-4">
         {/* Informações da Empresa */}
-        <div className="bg-blue-50 p-3 rounded-lg">
-          <h4 className="font-semibold text-blue-900 mb-2 flex items-center gap-2">
+        <div className="bg-[#FFD2B3] p-3 rounded-lg">
+          <h4 className="font-semibold text-[#FF7610] mb-2 flex items-center gap-2">
             <Target className="h-4 w-4" />
             Empresa Compatível
           </h4>

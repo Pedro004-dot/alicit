@@ -39,22 +39,22 @@ const HomePage: React.FC<HomePageProps> = ({
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              Bem-vindo ao Alicit! 👋
+              Bem-vindo a Alicit! 
             </h1>
             <p className="text-gray-600 text-lg">
               Plataforma inteligente para matching de licitações e empresas
             </p>
           </div>
-          <div className="text-6xl">🎯</div>
+          <div className="text-6xl"></div>
         </div>
       </div>
 
       {/* Quick Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg shadow-sm p-6 text-white">
+        <div className="bg-gradient-to-r from-[#FF7610] to-[#CC5F0D] rounded-lg shadow-sm p-6 text-white">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-blue-100 text-sm font-medium">Total de Licitações</p>
+              <p className="text-[#FFD2B3] text-sm font-medium">Total de Licitações</p>
               <p className="text-3xl font-bold">{bidsCount}</p>
             </div>
             <div className="text-3xl opacity-80">📋</div>
@@ -86,7 +86,7 @@ const HomePage: React.FC<HomePageProps> = ({
       {status && <StatusCards status={status} />}
 
       {/* Configuration Section */}
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200">
+      {/* <div className="bg-white rounded-lg shadow-sm border border-gray-200">
         <div className="border-b border-gray-200 px-6 py-4">
           <h2 className="text-xl font-semibold text-gray-900 flex items-center">
             <span className="mr-2">⚙️</span>
@@ -112,7 +112,7 @@ const HomePage: React.FC<HomePageProps> = ({
             />
           )}
         </div>
-      </div>
+      </div> */}
 
       {/* Quick Actions */}
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
@@ -126,7 +126,7 @@ const HomePage: React.FC<HomePageProps> = ({
             <p className="text-gray-600 text-sm mb-3">
               Visualize e gerencie todas as licitações disponíveis na plataforma
             </p>
-            <span className="text-blue-600 text-sm font-medium">Ver licitações →</span>
+            <span className="text-[#FF7610] text-sm font-medium">Ver licitações →</span>
           </div>
           
           <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">

@@ -1,4 +1,5 @@
 import React from 'react';
+import logoAlicit from '../assets/logoAlicit.jpeg';
 
 interface NavbarProps {
   activePage: 'home' | 'bids' | 'companies' | 'matching';
@@ -51,9 +52,8 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
           <div className="flex items-center space-x-3">
-            <div className="text-2xl">🎯</div>
+            <img src={logoAlicit} alt="Logo Alicit" className="h-10 w-auto" />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Alicit</h1>
               <p className="text-xs text-gray-600">Sistema de Matching</p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 className={`
                   relative flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200
                   ${activePage === item.id
-                    ? 'bg-blue-100 text-blue-700 shadow-sm'
+                    ? 'bg-[#FFD2B3] text-[#FF7610] shadow-sm'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                   }
                 `}
@@ -81,7 +81,7 @@ const Navbar: React.FC<NavbarProps> = ({
                   <span className={`
                     inline-flex items-center justify-center px-2 py-1 text-xs font-bold rounded-full
                     ${activePage === item.id
-                      ? 'bg-blue-200 text-blue-800'
+                      ? 'bg-[#FFB380] text-[#CC5F0D]'
                       : 'bg-gray-200 text-gray-700'
                     }
                   `}>

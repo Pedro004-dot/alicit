@@ -16,7 +16,7 @@ const BidCard: React.FC<BidCardProps> = ({ bid, onClick }) => {
 
   return (
     <div 
-      className={`bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500 hover:shadow-lg transition-shadow duration-200 ${
+      className={`bg-white rounded-lg shadow-md p-6 border-l-4 border-[#FF7610] hover:shadow-lg transition-shadow duration-200 ${
         onClick ? 'cursor-pointer hover:bg-gray-50' : ''
       }`}
       onClick={handleClick}
@@ -27,7 +27,7 @@ const BidCard: React.FC<BidCardProps> = ({ bid, onClick }) => {
             {bid.objeto_compra}
           </h3>
           <div className="flex items-center gap-4 text-sm text-gray-600">
-            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
+            <span className="bg-[#FFD2B3] text-[#CC5F0D] px-2 py-1 rounded-full text-xs font-medium">
               {bid.modalidade_nome || 'Modalidade não informada'}
             </span>
             <span>{bid.uf}</span>
@@ -37,7 +37,7 @@ const BidCard: React.FC<BidCardProps> = ({ bid, onClick }) => {
         {onClick && (
           <div className="flex-shrink-0 ml-4">
             <button 
-              className="text-gray-400 hover:text-blue-600 transition-colors p-1"
+              className="text-gray-400 hover:text-[#FF7610] transition-colors p-1"
               onClick={(e) => {
                 e.stopPropagation();
                 handleClick();
@@ -82,7 +82,7 @@ const BidCard: React.FC<BidCardProps> = ({ bid, onClick }) => {
           <div className="flex justify-between items-center text-xs text-gray-500">
             <span>PNCP: {bid.pncp_id}</span>
             {onClick && (
-              <span className="text-blue-600 hover:text-blue-800">
+              <span className="text-[#FF7610] hover:text-[#FF7610]">
                 Clique para ver detalhes →
               </span>
             )}
